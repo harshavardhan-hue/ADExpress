@@ -1,0 +1,27 @@
+# Node modules
+node_modules/
+
+# Playwright output directories
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+
+# Screenshots and videos captured during tests
+screenshots/
+videos/
+
+# Test result files
+results.json
+results.xml
+
+# Environment / secrets
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Scratch files
+scratch/
