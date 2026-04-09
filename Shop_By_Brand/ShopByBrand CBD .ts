@@ -13,7 +13,7 @@ export class ShopByBrand {
 
         // Button to open the Shop by Brand menu
         this.shopByBrandMenuBtn = page.getByRole('button', { name: 'Shop by Brand' });
-        
+
         // The specific CBD category icon user provided
         this.cbdCategoryIcon = page.locator('img[src*="cbdcategoryicon.png"]').first();
 
