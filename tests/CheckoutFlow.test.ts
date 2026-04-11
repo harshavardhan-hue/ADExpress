@@ -10,6 +10,13 @@ test.describe('E-Commerce Checkout Flow Validation', () => {
         poManager = new DataManager(page, context);
         await page.goto('/myaccount?tab=login');
         await poManager.getLoginPage().login(CREDENTIALS.validUser.username, CREDENTIALS.validUser.password);
+        await page.waitForURL('**/', { timeout: 30000 });
+        
+        // Handle common site modal
+        const dismissBtn = page.getByRole('button', { name: 'Continue' });
+        if (await dismissBtn.isVisible({ timeout: 10000 }).catch(() => false)) {
+            await dismissBtn.click();
+        }
         await page.waitForLoadState('networkidle');
     });
 

@@ -10,7 +10,7 @@ export class ProductPage {
         this.page = page;
         this.incrementQuantityBtn = page.getByText('+', { exact: true }).first();
         this.addToCartBtn = page.getByText(/Add to Cart/i).first();
-        this.searchInput = page.getByPlaceholder('Search for products…');
+        this.searchInput = page.getByPlaceholder(/Search for products/i).first();
     }
 
     async searchProduct(productName: string) {

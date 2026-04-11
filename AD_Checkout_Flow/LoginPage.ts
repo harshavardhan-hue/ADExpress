@@ -10,11 +10,9 @@ export class LoginPage {
         this.page = page;
         
         // Target the login form specifically to avoid conflicts with Registration or Reset Password fields
-        const loginForm = page.locator('div.jsx-2227282855').filter({ hasText: 'Login' }).first(); // Standard container seen in snapshots
-        
-        this.usernameInput = page.locator('#user_email').first();
-        this.passwordInput = page.locator('div').filter({ hasText: /^Password \*/ }).locator('input').first();
-        this.loginBtn = page.locator('button').filter({ hasText: /^Login$/ }).first();
+        this.usernameInput = page.locator('#user_email');
+        this.passwordInput = page.locator('input[type="password"]#password');
+        this.loginBtn = page.locator('form.loginForm button[type="submit"]').or(page.getByRole('button', { name: /Login/i }).last());
     }
 
     async login(username: string, password: string) {
