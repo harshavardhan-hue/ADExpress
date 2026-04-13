@@ -1,0 +1,28 @@
+
+Running 1 test using 1 worker
+
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\Tax_Flow.test.ts:24:9 › Full USA Tax Flow Verification › Verify Tax calculations for all 50 states
+[1A[2K[chromium] › tests\Tax_Flow.test.ts:24:9 › Full USA Tax Flow Verification › Verify Tax calculations for all 50 states
+--- STARTING 50-STATE TAX VERIFICATION ---
+
+--- STARTING 50-STATE TAX VERIFICATION ---
+[1A[2KSelecting product from New Arrivals...
+
+Selecting product from New Arrivals...
+[1A[2KTesting Product: Need Help
+
+Testing Product: Need Help
+[1A[2KOpening cart and proceeding to checkout...
+
+Opening cart and proceeding to checkout...
+[1A[2K
+[1/50] ========== Alabama ==========
+
+
+[1/50] ========== Alabama ==========
+[1A[2KApplying Address for Alabama: "600 Dexter "
+
+Applying Address for Alabama: "600 Dexter "

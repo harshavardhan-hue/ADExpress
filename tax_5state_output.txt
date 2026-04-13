@@ -1,0 +1,63 @@
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\Tax_Flow_5States.test.ts:65:9 › Tax Audit — 5 US States › Verify Tax for MA · NY · TX · CA · FL
+[1A[2K[chromium] › tests\Tax_Flow_5States.test.ts:65:9 › Tax Audit — 5 US States › Verify Tax for MA · NY · TX · CA · FL
+
+========== TAX AUDIT : 5 STATES ==========
+
+[1A[2K✅  Login successful
+
+[1A[2K✅  Product selected: Need Help  (SKU: SHPSE1504CT)
+
+[1A[2K✅  Variants added: SOUR GREEN APPLE + BLUE RAZZ LEMONADE
+
+[1A[2K✅  Checkout page loaded
+
+[1A[2K
+---------- [1/5] Massachusetts (MA) ----------
+
+[1A[2K  → Entering address: "Nashua Street Boston"
+
+[1A[2K  → Tax detected: N/A
+
+[1A[2K  ✅  Massachusetts — N/A (No Tax)
+
+[1A[2K
+---------- [2/5] New York (NY) ----------
+
+[1A[2K  → Entering address: "State St Washington Ave Albany NY"
+
+[1A[2K  ❌  ERROR for New York: locator.waitFor: Target page, context or browser has been closed
+
+[1A[2K
+✅  Report saved → C:\Users\PSHCPU003\Documents\Automation Playwright\ADExpress\Tax_Audit_Report.md
+
+[1A[2K
+========== FINAL RESULTS ==========
+
+[1A[2K  MA   Massachusetts    Tax: N/A        No Tax
+
+[1A[2K  NY   New York         Tax: N/A        Error
+
+[1A[2K  1) [chromium] › tests\Tax_Flow_5States.test.ts:65:9 › Tax Audit — 5 US States › Verify Tax for MA · NY · TX · CA · FL 
+
+    [31mTest timeout of 1800000ms exceeded.[39m
+
+    Error: apiRequestContext._wrapApiCall: ENOENT: no such file or directory, open 'C:\Users\PSHCPU003\Documents\Automation Playwright\ADExpress\test-results\.playwright-artifacts-0\traces\f7c3b1a906cd746d6071-6e365908c07caf6790ed.network'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results\tests-Tax_Flow_5States-Tax-6aaeb--for-MA-·-NY-·-TX-·-CA-·-FL-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results\tests-Tax_Flow_5States-Tax-6aaeb--for-MA-·-NY-·-TX-·-CA-·-FL-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results\tests-Tax_Flow_5States-Tax-6aaeb--for-MA-·-NY-·-TX-·-CA-·-FL-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace test-results\tests-Tax_Flow_5States-Tax-6aaeb--for-MA-·-NY-·-TX-·-CA-·-FL-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+

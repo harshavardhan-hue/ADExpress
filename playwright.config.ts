@@ -38,7 +38,7 @@ export default defineConfig({
         trace: 'on',
         screenshot: 'on',
         video: 'on',
-        headless: false,
+        headless: true,
         ignoreHTTPSErrors: true,
         permissions: ['geolocation'],
         viewport: { width: 3020, height: 2080 },
