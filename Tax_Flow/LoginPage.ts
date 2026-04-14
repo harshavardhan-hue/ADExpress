@@ -5,9 +5,9 @@ export class LoginPage {
 
     async login(username: string, password: string) {
         // Use the exact same locators that worked in the main checkout flow
-        const usernameInput = this.page.locator('#user_email');
-        const passwordInput = this.page.locator('input[type="password"]#password');
-        const loginBtn = this.page.locator('form.loginForm button[type="submit"]').or(this.page.getByRole('button', { name: /Login/i }).last());
+        const usernameInput = this.page.locator('form.loginForm #user_email, #user_email').first();
+        const passwordInput = this.page.locator('input[name="password"], #password').filter({ visible: true }).first();
+        const loginBtn = this.page.locator('form.loginForm button[type="submit"], button:has-text("Login")').first();
 
         await usernameInput.waitFor({ state: 'visible', timeout: 15000 });
         await usernameInput.fill(username);

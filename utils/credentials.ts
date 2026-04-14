@@ -1,6 +1,6 @@
 export const CREDENTIALS = {
     validUser: {
-        username: 'UtkarshShukla',
+        username: 'utkarshShukla',
         password: '1234567'
     }
 };
